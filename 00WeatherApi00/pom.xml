@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://maven.apache.org/POM/4.0.0">
+
+<modelVersion>4.0.0</modelVersion>
+<groupId>pl.kamilbiernacki</groupId>
+<artifactId>springWeather</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<packaging>jar</packaging>
+<name>springWeather</name>
+<description>Demo project for Spring Boot</description>
+<parent>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-parent</artifactId>
+<version>1.5.11.BUILD-SNAPSHOT</version>
+<relativePath/>
+<!-- lookup parent from repository -->
+</parent>
+
+<properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+<java.version>1.8</java.version>
+</properties>
+
+<dependencies>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+<groupId>org.projectlombok</groupId>
+<artifactId>lombok</artifactId>
+<optional>true</optional>
+</dependency>
+<dependency>
+    <groupId>joda-time</groupId>
+    <artifactId>joda-time</artifactId>
+    <version>2.10</version>
+</dependency>
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+<dependency>
+    <groupId>com.sun.jersey</groupId>
+    <artifactId>jersey-client</artifactId>
+    <version>1.19</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
+<dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-core-asl</artifactId>
+    <version>1.9.13</version>
+</dependency>		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mustache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.restdocs</groupId>
+			<artifactId>spring-restdocs-mockmvc</artifactId>
+			<scope>test</scope>
+		</dependency>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-test</artifactId>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>net.sourceforge.nekohtml</groupId>
+<artifactId>nekohtml</artifactId>
+<version>1.9.22</version>
+</dependency>
+<dependency>
+<groupId>org.json</groupId>
+<artifactId>json</artifactId>
+<version>20180130</version>
+</dependency>
+</dependencies>
+<build>
+<plugins>
+<plugin>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-maven-plugin</artifactId>
+</plugin>
+</plugins>
+</build>
+<repositories>
+<repository>
+<id>spring-snapshots</id>
+<name>Spring Snapshots</name>
+<url>https://repo.spring.io/snapshot</url>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</repository>
+<repository>
+<id>spring-milestones</id>
+<name>Spring Milestones</name>
+<url>https://repo.spring.io/milestone</url>
+<snapshots>
+<enabled>false</enabled>
+</snapshots>
+</repository>
+</repositories>
+<pluginRepositories>
+<pluginRepository>
+<id>spring-snapshots</id>
+<name>Spring Snapshots</name>
+<url>https://repo.spring.io/snapshot</url>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</pluginRepository>
+<pluginRepository>
+<id>spring-milestones</id>
+<name>Spring Milestones</name>
+<url>https://repo.spring.io/milestone</url>
+<snapshots>
+<enabled>false</enabled>
+</snapshots>
+</pluginRepository>
+</pluginRepositories>
+</project>
